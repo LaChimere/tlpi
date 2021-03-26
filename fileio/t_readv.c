@@ -45,5 +45,9 @@ int main(int argc, char *argv[]) {
     }
     printf("total bytes requested: %ld; bytes read: %ld\n", (long)totRequired, (long)numRead);
 
+    if (close(fd) == -1) {
+        errExit("close");
+    }
+
     exit(EXIT_SUCCESS);
 }
