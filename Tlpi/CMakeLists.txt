@@ -3,6 +3,7 @@ add_library(Tlpi
         error_functions.c
         ugid_functions.c
         curr_time.c
+        file_perms.c
         )
 target_include_directories(Tlpi
         INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})

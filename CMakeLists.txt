@@ -11,7 +11,7 @@ list(APPEND EXTRA_LIBS Tlpi)
 
 add_compile_options(-Wall)
 
-add_executable(${PROJECT_NAME} users_groups/check_passwd.c)
+add_executable(${PROJECT_NAME} files/t_chown.c)
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
         Tlpi
