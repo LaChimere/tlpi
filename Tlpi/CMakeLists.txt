@@ -4,6 +4,7 @@ add_library(Tlpi
         ugid_functions.c
         curr_time.c
         file_perms.c
+        signal_functions.c
         )
 target_include_directories(Tlpi
         INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
